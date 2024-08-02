@@ -1,0 +1,37 @@
+#!/usr/bin/layout
+#name=Read Circles from File
+#help=reads and create circle from a file
+
+
+int main(){
+  file f;
+  f.filename="hex_packed_circle_array.txt";
+  bool b=true;
+  f.open(b);
+  string s=f.read();
+  f.close();
+  stringList sl=s.split("\n");
+  int i,k;
+  layout->drawing->clearPoints();
+  for(i=0;i<sl.size();i++){
+    if (sl.at(i).left(1)!="#"){
+      stringList sl2=sl.at(i).split(",");
+      if (sl2.size()>=3){
+	double x=sl2.at(0).toDouble();
+	double y=sl2.at(1).toDouble();
+	double r=sl2.at(2).toDouble();
+	int layer=4;
+	if (sl2.size()>3) layer=sl2.at(3).toInt();
+	layout->drawing->activeLayer=layer;
+  layout->drawing->p(x+1.00*r,y+0.00*r);
+  layout->drawing->p(x+0.50*r,y+0.87*r);
+  layout->drawing->p(x-0.50*r,y+0.87*r);
+  layout->drawing->p(x-1.00*r,y+0.00*r);
+  layout->drawing->p(x-0.50*r,y-0.87*r);
+  layout->drawing->p(x+0.50*r,y-0.87*r);
+	layout->drawing->polygon();
+      }
+    }
+  }
+  layout->drawing->scaleFull();
+}
