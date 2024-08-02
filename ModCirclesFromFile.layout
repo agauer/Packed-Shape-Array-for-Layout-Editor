@@ -23,12 +23,12 @@ int main(){
 	int layer=4;
 	if (sl2.size()>3) layer=sl2.at(3).toInt();
 	layout->drawing->activeLayer=layer;
-  layout->drawing->p(x+1.00*r,y+0.00*r);
-  layout->drawing->p(x+0.50*r,y+0.87*r);
-  layout->drawing->p(x-0.50*r,y+0.87*r);
-  layout->drawing->p(x-1.00*r,y+0.00*r);
-  layout->drawing->p(x-0.50*r,y-0.87*r);
-  layout->drawing->p(x+0.50*r,y-0.87*r);
+  	layout->drawing->p(x+1.00*r,y+0.00*r);
+  	layout->drawing->p(x+0.50*r,y+0.87*r);
+  	layout->drawing->p(x-0.50*r,y+0.87*r);
+  	layout->drawing->p(x-1.00*r,y+0.00*r);
+  	layout->drawing->p(x-0.50*r,y-0.87*r);
+  	layout->drawing->p(x+0.50*r,y-0.87*r);
 	layout->drawing->polygon();
       }
     }
