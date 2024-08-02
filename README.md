@@ -11,17 +11,17 @@ A separate Layout Editor macro is provided to process the text file and generate
 ## Requirements
 
 Python 3.x
-Required Python packages (install via 'pip'):
-* 'numpy'
-* 'random'
+Required Python packages (install via <pip>):
+* <numpy>
+* <random>
 
 ## Parameters
 
-'x_maxDimension': box size in x
-'y_maxDimension': box size in y
-'radius': shape radius
-'domain_spacing': ceneter to center distance between shapes
-'max_dev': maximum deviation in the center position and radius (controlled independently)
+<x_maxDimension>: box size in x
+<y_maxDimension>: box size in y
+<radius>': shape radius
+<domain_spacing>: ceneter to center distance between shapes
+<max_dev>: maximum deviation in the center position and radius (controlled independently)
 
 ## Output
 
