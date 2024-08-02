@@ -1,10 +1,10 @@
-# Packed Shape Array Macro for Layout Editor
+# Packed Shape Array Macro for LayoutEditor
 
 ## Overview
 
 This Python script generates a text file containing coordinates (x, y) and radius information for hexagonally packed shapes within a specified area. Each shape can have random offsets from perfect packing and random fluctuations in radius within a specified percentage range.
 
-A separate Layout Editor macro is provided to process the text file and generate the shape array as a gds file.
+A separate LayoutEditor macro is provided to process the text file and generate the shape array as a gds file.
 
 # Python script
 
@@ -29,11 +29,11 @@ The script generates a tab delimited text file (hex_packed_array.txt) in the cur
 
 `x_position`    `y_position`    `radius`    `layer`
 
-# Layout Editor macro
+# LayoutEditor macro
 
 ## Requirements
 
-Layout Editor build 20230925
+LayoutEditor build 20230925
 
 ## Shape definition
 
