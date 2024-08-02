@@ -56,7 +56,7 @@ To generate polygons:
 
 `layout->drawing->p(x2,y2);`
 
-...
+`...`
 
 `layout->drawing->polygon();`
 
