@@ -61,7 +61,7 @@ To generate polygons:
 `layout->drawing->polygon();`
 
 
-`p(x,y)` defines each consecutive point in the polygon. The last point will automatically connect to the first point. `ModCirclesFromFile.layout` is set up to generate hexagons.
+`p(x,y)` defines each consecutive point in the polygon. The last point will automatically connect to the first point. ModCirclesFromFile.layout is set up to generate hexagons.
 
 ## Usage
 
