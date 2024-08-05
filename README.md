@@ -20,7 +20,7 @@ Required Python packages (install via `pip`):
 * `x_maxDimension`: box size in x
 * `y_maxDimension`: box size in y
 * `radius`: shape radius
-* `domain_spacing`: ceneter to center distance between shapes
+* `domain_spacing`: center to center distance between shapes
 * `max_dev`: maximum deviation in the center position and radius (controlled independently)
 
 ## Output
