@@ -11,6 +11,7 @@ A separate LayoutEditor macro is provided to process the text file and generate 
 ## Requirements
 
 Python 3.x
+
 Required Python packages (install via `pip`):
 * `numpy`
 * `random`
@@ -27,7 +28,9 @@ Required Python packages (install via `pip`):
 
 The script generates a tab delimited text file (hex_packed_array.txt) in the current directory containing the following information for each shape:
 
-`x_position`    `y_position`    `radius`    `layer`
+```text
+x_position  y_position  radius  layer
+```
 
 # LayoutEditor macro
 
@@ -43,23 +46,20 @@ Shapes are defined after the line:
 
 To generate circles:
 
-`layout->drawing->p(x,y);`
-
-`layout->drawing->p(x,y+r);`
-
-`layout->drawing->circle();`
-
+```text
+layout->drawing->p(x,y);
+layout->drawing->p(x,y+r);
+layout->drawing->circle();
+```
 
 To generate polygons:
 
-`layout->drawing->p(x1,y1);`
-
-`layout->drawing->p(x2,y2);`
-
-`...`
-
-`layout->drawing->polygon();`
-
+```text
+layout->drawing->p(x1,y1);
+layout->drawing->p(x2,y2);
+...
+layout->drawing->polygon();
+```
 
 `p(x,y)` defines each consecutive point in the polygon. The last point will automatically connect to the first point. ModCirclesFromFile.layout is set up to generate hexagons.
 
