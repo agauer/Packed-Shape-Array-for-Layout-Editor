@@ -65,6 +65,12 @@ layout->drawing->polygon();
 
 `p(x,y)` defines each consecutive point in the polygon. The last point will automatically connect to the first point. ModCirclesFromFile.layout is set up to generate hexagons.
 
+## Installation
+
+```bash
+git clone 
+```
+
 ## Usage
 
 Macros can be ran in Layout Editor using Utilies > Macros.
