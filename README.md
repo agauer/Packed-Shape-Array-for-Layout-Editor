@@ -68,9 +68,15 @@ layout->drawing->polygon();
 ## Installation
 
 ```bash
-git clone 
+git clone https://github.com/agauer/Packed-Shape-Array-for-Layout-Editor.git
 ```
 
 ## Usage
 
-Macros can be ran in Layout Editor using Utilies > Macros.
+Run the Python script with the following command:
+
+```bash
+python hexArray_layout.py
+```
+
+Macros can be ran in LayoutEditor application using Utilies > Macros.
