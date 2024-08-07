@@ -26,10 +26,18 @@ Required Python packages (install via `pip`):
 
 ## Output
 
-The script generates a tab delimited text file (hex_packed_array.txt) in the current directory containing the following information for each shape:
+The script generates a comma delimited text file (hex_packed_array.txt) in the current directory containing the following information for each shape:
 
 ```text
-x_position  y_position  radius  layer
+x_position,y_position,radius,layer
+```
+
+Example output:
+
+```text
+0.326,0.279,0.3,1
+1.313,0.208,0.3,1
+...
 ```
 
 # LayoutEditor macro
