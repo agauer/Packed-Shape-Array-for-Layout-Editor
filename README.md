@@ -22,7 +22,7 @@ Required Python packages (install via `pip`):
 * `y_maxDimension`: box size in y
 * `radius`: shape radius
 * `domain_spacing`: center to center distance between shapes
-* `max_dev`: maximum deviation in the center position and radius (controlled independently)
+* `max_dev`: maximum deviation in the center position or radius
 
 ## Output
 
@@ -42,7 +42,9 @@ LayoutEditor build 20230925
 
 Shapes are defined after the line:
 
-`layout->drawing->activeLayer=layer;`
+```text
+layout->drawing->activeLayer=layer;
+```
 
 To generate circles:
 
